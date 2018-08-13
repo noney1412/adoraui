@@ -1,0 +1,29 @@
+{
+    "name": "adoraui",
+    "version": "1.0.0",
+    "author": "Chanon Panpila <nonpanpila@gmail.com>",
+    "license": "MIT",
+    "main": "lib/index.js",
+    "typings": "lib/index.d.ts",
+    "jsnext:main": "lib-esm/index.js",
+    "module": "lib-esm/index.js",
+    "scripts": {
+        "clean": "rm -rf _bundles lib lib-esm",
+        "prepare": "npm run build",
+        "wp": "webpack",
+        "build": "npm run clean && tsc --project tsconfig.build.json && tsc --project tsconfig.build.json -m es6 --outDir lib-esm && webpack"
+    },
+    "dependencies": {
+        "@types/react": "^16.4.9",
+        "@types/react-dom": "^16.0.7",
+        "react": "^16.4.2",
+        "react-dom": "^16.4.2"
+    },
+    "devDependencies": {
+        "awesome-typescript-loader": "^5.2.0",
+        "source-map-loader": "^0.2.3",
+        "typescript": "^3.0.1",
+        "webpack": "^4.16.5",
+        "webpack-cli": "^3.1.0"
+    }
+}
