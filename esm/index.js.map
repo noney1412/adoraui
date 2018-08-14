@@ -1,1 +1,0 @@
-{"version":3,"file":"index.js","sourceRoot":"","sources":["../src/index.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,KAAK,EAAE,MAAM,oBAAoB,CAAC;AAC3C,OAAO,EAAE,OAAO,EAAE,MAAM,qBAAqB,CAAC","sourcesContent":["export { Hello } from './components/Hello';\r\nexport { AButton } from './components/Button';\r\n"]}
