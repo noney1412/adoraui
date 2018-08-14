@@ -1,17 +1,22 @@
 {
     "name": "adoraui",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Chanon Panpila <nonpanpila@gmail.com>",
     "license": "MIT",
     "main": "lib/index.js",
     "typings": "lib/index.d.ts",
     "jsnext:main": "lib-esm/index.js",
     "module": "lib-esm/index.js",
+    "files": [
+        "_bundles",
+        "lib",
+        "lib-esm"
+    ],
     "scripts": {
         "clean": "rm -rf _bundles lib lib-esm",
         "prepare": "npm run build",
         "wp": "webpack",
-        "build": "npm run clean && tsc --project tsconfig.build.json && tsc --project tsconfig.build.json -m es6 --outDir lib-esm && webpack"
+        "build": "npm run clean && tsc --project tsconfig.webpack.json && tsc --project tsconfig.webpack.json -m es6 --outDir lib-esm && webpack"
     },
     "dependencies": {
         "@types/react": "^16.4.9",
