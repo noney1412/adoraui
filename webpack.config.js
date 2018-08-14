@@ -1,12 +1,12 @@
 const path = require('path');
 const { TsConfigPathsPlugin } = require('awesome-typescript-loader');
 
-const isdev = (process.env.NODE_ENV || 'development') === 'development';
+const dev = process.env.NODE_ENV !== 'production';
 
-const configFilePath = path.resolve(__dirname, 'tsconfig.build.json');
+const configFilePath = path.resolve(__dirname, 'tsconfig.webpack.json');
 
 const config = {
-    mode: isdev ? 'development' : 'production',
+    mode: dev ? 'development' : 'production',
     watch: process.env.WATCH === 'true',
     devtool: 'source-map',
     entry: {
@@ -14,7 +14,7 @@ const config = {
         'adoraui.min': ['./src/index.ts']
     },
     output: {
-        path: path.resolve(__dirname, '_bundles'),
+        path: path.resolve(__dirname, 'dist'),
         filename: '[name].js',
         libraryTarget: 'umd',
         library: 'adoraui',
