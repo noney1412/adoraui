@@ -1,6 +1,6 @@
 {
     "name": "adoraui",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "author": "Chanon Panpila <nonpanpila@gmail.com>",
     "license": "MIT",
     "main": "_bundles/adoraui.js",
