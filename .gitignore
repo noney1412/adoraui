@@ -16,9 +16,9 @@
 # production
 /build
 /dist
-lib
-lib-esm
-_bundles
+/lib
+/lib-esm
+/esm
 
 
 # misc
