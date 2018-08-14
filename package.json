@@ -1,9 +1,9 @@
 {
     "name": "adoraui",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "author": "Chanon Panpila <nonpanpila@gmail.com>",
     "license": "MIT",
-    "main": "lib/index.js",
+    "main": "_bundles/adoraui.js",
     "typings": "lib/index.d.ts",
     "jsnext:main": "lib-esm/index.js",
     "module": "lib-esm/index.js",
