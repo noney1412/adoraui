@@ -1,6 +1,6 @@
 {
     "name": "adoraui",
-    "version": "1.0.5",
+    "version": "1.0.6",
     "author": "Chanon Panpila <nonpanpila@gmail.com>",
     "license": "MIT",
     "main": "lib/index.js",
