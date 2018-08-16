@@ -1,7 +1,7 @@
 import React, { Component, SFC } from 'react';
 
-interface AButtonProps {
+type AButtonProps = {
     text: string;
-}
+};
 
 export const AButton: SFC<AButtonProps> = ({ text }) => <button>{text}</button>;

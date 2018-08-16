@@ -1,11 +1,21 @@
 import React from 'react';
 
-export interface HelloProps {
+export type HelloProps = {
     compiler: string;
     framework: string;
-}
+};
 
-export class Hello extends React.Component<HelloProps, {}> {
+export class Hello extends React.Component<HelloProps, HelloProps> {
+    static defaultProps = {
+        compiler: 'typescript',
+        framework: 'testing'
+    };
+
+    state = {
+        compiler: 'this',
+        framework: '5555Test'
+    };
+
     render() {
         return (
             <h1>

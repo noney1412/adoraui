@@ -11,6 +11,7 @@
         "sourceMap": true,
         "inlineSources": true,
         "declaration": true,
+        "declarationMap": true,
         "jsx": "react",
         "typeRoots": ["./node_modules/@types"],
         "baseUrl": ".",
